@@ -44,25 +44,31 @@ header nav ul li a:hover {
   height: 460px;
 }
 
+.container {
+  
+  align-items: center;
+}
 .container-flex {
   display: flex;
   flex-flow: row;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #56bfec;
 }
 
 .description {
-  width: 440px;
+  width: 400px;
   height: 460px;
   text-align: center;
+  padding-right: 40px;
 }
 
 .robot {
-  width: 440px;
+  width: 400px;
   height: 460px;
   padding-top: 40px;
+  padding-left: 40px;
 }
 
 .btnimg {
