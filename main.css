@@ -41,7 +41,7 @@ header nav ul li a:hover {
 
 .content {
   background-color: #56bfec;
-  height: 2000px;
+  height: 460px;
 }
 
 .container-flex {
@@ -50,18 +50,19 @@ header nav ul li a:hover {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: #56bfec;
 }
 
 .description {
   width: 440px;
-  height: 400px;
+  height: 460px;
   text-align: center;
 }
 
 .robot {
   width: 440px;
-  height: 400px;
-  padding-top: 60px;
+  height: 460px;
+  padding-top: 40px;
 }
 
 .btnimg {
@@ -98,4 +99,14 @@ h1 {
   cursor: pointer;
   width: 300px;
   border-radius: 4px;
+}
+h1 {
+  font-weight: normal;
+}
+.emphasize{
+   font-weight: bolder;
+   font-size: 5rem;
+   letter-spacing: -.1875rem;
+   line-height: 1;
+   margin-bottom: 2rem;
 }
