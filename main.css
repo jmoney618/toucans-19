@@ -382,23 +382,121 @@ h3 {
   font-weight: 300;
 }
 
+/* CSS animations */
+
+@-webkit-keyframes reveal-item--visible {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes reveal-item--visible {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal-item--visible {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .reveal-item {
   opacity: 0;
-  -webkit-transform: translateY(-1rem);
+  -webkit-animation: reveal-item--visible ease-in 1;
+  -moz-animation: reveal-item--visible ease-in 1;
+  animation: reveal-item--visible ease-in 1;
+  /* -webkit-transform: translateY(-1rem);
   transform: translateY(-1rem);
   -webkit-transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75), -webkit-transform 1.5s cubic-bezier(.6, -.5, 0, .75);
   transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75), -webkit-transform 1.5s cubic-bezier(.6, -.5, 0, .75);
   transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75), transform 1.5s cubic-bezier(.6, -.5, 0, .75);
-  transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75), transform 1.5s cubic-bezier(.6, -.5, 0, .75), -webkit-transform 1.5s cubic-bezier(.6, -.5, 0, .75);
+  transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75), transform 1.5s cubic-bezier(.6, -.5, 0, .75), -webkit-transform 1.5s cubic-bezier(.6, -.5, 0, .75); */
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
-.reveal-item--visible {
+.reveal-item.one {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.reveal-item.two {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.reveal-item.three {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.reveal-item.four {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.reveal-item.five {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+
+.reveal-item.six {
+  -webkit-animation-delay: 2.2s;
+  -moz-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+
+.reveal-item.seven {
+  -webkit-animation-delay: 2.7s;
+  -moz-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+}
+
+.reveal-item.eight {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.reveal-item.nine {
+  -webkit-animation-delay: 3.2s;
+  -moz-animation-delay: 3.2s;
+  animation-delay: 3.2s;
+}
+
+/* .reveal-item--visible {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-}
+} */
+
+/* END CSS animations */
 
 .card__description {
   background-color: #fafafa;
